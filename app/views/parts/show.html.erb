@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @part.title %>
+</p>
+
+<p>
+  <b>Offstock:</b>
+  <%=h @part.offstock %>
+</p>
+
+<p>
+  <b>Retail cost:</b>
+  <%=h @part.retail_cost %>
+</p>
+
+<p>
+  <b>Final cost:</b>
+  <%=h @part.final_cost %>
+</p>
+
+
+<%= link_to 'Edit', edit_part_path(@part) %> |
+<%= link_to 'Back', parts_path %>

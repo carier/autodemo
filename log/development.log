@@ -1,0 +1,936 @@
+/!\ FAILSAFE /!\  Thu Mar 10 17:34:54 +0200 2011
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/dependencies.rb:156:in `require'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activesupport-2.3.8/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/handler/webrick.rb:48:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rack-1.1.0/lib/rack/handler/webrick.rb:14:in `run'
+    /home/carier/.rvm/gems/ree-1.8.7-2010.02/gems/rails-2.3.8/lib/commands/server.rb:111
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-10 17:36:40) [GET]
+
+ActionController::RoutingError (No route matches "/car/index.html" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-10 17:36:58) [GET]
+
+ActionController::RoutingError (No route matches "/part/index.html" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show to html (for 127.0.0.1 at 2011-03-10 17:37:28) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mPart Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (1.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Part with ID=index):
+  app/controllers/parts_controller.rb:16:in `show'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.4ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-10 17:37:37) [GET]
+
+ActionController::RoutingError (No route matches "/part/index.html" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-10 17:37:47) [GET]
+
+ActionController::RoutingError (No route matches "/part/" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 17:37:53) [GET]
+  [4;36;1mPart Load (15.7ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+Completed in 101ms (View: 52, DB: 16) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#index (for 127.0.0.1 at 2011-03-10 17:38:06) [GET]
+  [4;35;1mCar Load (0.8ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendering template within layouts/cars
+Rendering cars/index
+Completed in 84ms (View: 29, DB: 1) | 200 OK [http://localhost/cars]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#new (for 127.0.0.1 at 2011-03-10 17:38:13) [GET]
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/cars
+Rendering cars/new
+Completed in 175ms (View: 150, DB: 3) | 200 OK [http://localhost/cars/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#create (for 127.0.0.1 at 2011-03-10 17:38:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "car"=>{"model"=>"", "brand"=>"", "year"=>""}}
+  [4;35;1mCar Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (34.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (3.3ms)[0m   [0mROLLBACK[0m
+
+NoMethodError (undefined method `title' for #<Car:0xa60b558>):
+  app/controllers/cars_controller.rb:46:in `create'
+  app/controllers/cars_controller.rb:45:in `create'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#create (for 127.0.0.1 at 2011-03-10 17:39:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "car"=>{"model"=>"", "brand"=>"", "year"=>""}}
+  [4;36;1mCar Columns (4.6ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mSQL (7.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/cars
+Rendering cars/new
+Completed in 162ms (View: 108, DB: 13) | 200 OK [http://localhost/cars]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 17:39:48) [GET]
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+Completed in 40ms (View: 4, DB: 1) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-10 17:39:52) [GET]
+  [4;36;1mPart Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+Completed in 166ms (View: 30, DB: 6) | 200 OK [http://localhost/parts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-10 17:40:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"0.0", "retail_cost"=>"0.0", "title"=>"", "offstock"=>"0"}}
+  [4;35;1mPart Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (23.4ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/parts
+Rendering parts/new
+Completed in 101ms (View: 43, DB: 36) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-10 17:40:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"0.0", "retail_cost"=>"0.0", "title"=>"filter", "offstock"=>"1"}}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (1.5ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'filter') LIMIT 1[0m
+  [4;36;1mPart Create (0.7ms)[0m   [0;1mINSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `offstock`) VALUES(0.0, 0.0, '2011-03-10 15:40:22', 'filter', '2011-03-10 15:40:22', 1)[0m
+  [4;35;1mSQL (44.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/parts/1
+Completed in 103ms (DB: 49) | 302 Found [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-10 17:40:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (4.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 38ms (View: 18, DB: 7) | 200 OK [http://localhost/parts/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 17:40:24) [GET]
+  [4;36;1mPart Load (0.7ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 45ms (View: 17, DB: 7) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#destroy (for 127.0.0.1 at 2011-03-10 17:40:29) [DELETE]
+  Parameters: {"authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"1"}
+  [4;36;1mPart Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (4.7ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Destroy (0.7ms)[0m   [0mDELETE FROM `parts` WHERE `id` = 1[0m
+  [4;36;1mSQL (35.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/parts
+Completed in 89ms (DB: 44) | 302 Found [http://localhost/parts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 17:40:29) [GET]
+  [4;35;1mPart Load (0.7ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+Completed in 52ms (View: 4, DB: 1) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-10 17:41:17) [GET]
+  [4;36;1mPart Columns (5.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+Completed in 146ms (View: 123, DB: 7) | 200 OK [http://localhost/parts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-10 17:41:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"10.0", "retail_cost"=>"20.0", "title"=>"part 0001", "offstock"=>"1"}}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (0.8ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/parts
+Rendering parts/new
+Completed in 54ms (View: 22, DB: 5) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-10 17:41:45) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"20.0", "retail_cost"=>"20.0", "title"=>"part 0001", "offstock"=>"1"}}
+  [4;35;1mPart Columns (5.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001') LIMIT 1[0m
+  [4;36;1mPart Create (4.0ms)[0m   [0;1mINSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `offstock`) VALUES(20.0, 20.0, '2011-03-10 15:41:45', 'part 0001', '2011-03-10 15:41:45', 1)[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/parts/2
+Completed in 93ms (DB: 55) | 302 Found [http://localhost/parts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-10 17:41:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.8ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 25ms (View: 9, DB: 4) | 200 OK [http://localhost/parts/2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 17:41:52) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (1.1ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 57ms (View: 34, DB: 4) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#update (for 127.0.0.1 at 2011-03-10 17:41:55) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"2", "part"=>{"final_cost"=>"20.00", "retail_cost"=>"20.00", "title"=>"part 0001", "offstock"=>"0"}}
+  [4;36;1mPart Columns (8.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (0.9ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001' AND `parts`.id <> 2) LIMIT 1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 78ms (View: 33, DB: 11) | 200 OK [http://localhost/parts/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#update (for 127.0.0.1 at 2011-03-10 17:42:35) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"2", "part"=>{"final_cost"=>"20.00", "retail_cost"=>"20.00", "title"=>"part 0001", "offstock"=>"0"}}
+  [4;35;1mPart Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001' AND `parts`.id <> 2) LIMIT 1[0m
+  [4;35;1mPart Update (0.8ms)[0m   [0mUPDATE `parts` SET `updated_at` = '2011-03-10 15:42:36', `offstock` = 0 WHERE `id` = 2[0m
+  [4;36;1mSQL (42.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/parts/2
+Completed in 99ms (DB: 47) | 302 Found [http://localhost/parts/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-10 17:42:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPart Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (4.9ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 28ms (View: 9, DB: 8) | 200 OK [http://localhost/parts/2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 17:42:40) [GET]
+  [4;35;1mPart Load (0.7ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (5.8ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Completed in 32ms (View: 14, DB: 7) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 17:59:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (9.1ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa60b79c>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (149.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 18:08:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.5ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa35b434>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (213.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 18:08:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa4bfff0>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (101.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-10 18:21:08) [GET]
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 67ms (View: 42, DB: 4) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 18:21:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (17.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0x9cd0704>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (191.9ms)
+Rendered rescues/_request_and_response (2.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-10 18:29:18) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.7ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0x96c54a4>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (225.7ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (57.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (88.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 12:06:40) [GET]
+  [4;36;1mPart Load (768.8ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (479.2ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 1555ms (View: 250, DB: 1394) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:06:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (18.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (71.8ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa2defd8>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (206.4ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:47:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (29.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.6ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa3c02bc>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (206.2ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:47:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (28.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa6257b4>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (104.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:47:11) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (19.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa361f00>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (204.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:51:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (22.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa113730>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (204.8ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 12:53:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (19.0ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xa1d4e80>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (218.7ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:30:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (11.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 90ms (View: 58, DB: 13) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:30:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (10.8ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (7.8ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 74ms (View: 37, DB: 19) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:31:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (17.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 120ms (View: 78, DB: 18) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:31:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 152ms (View: 115, DB: 17) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:33:44) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (34.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (3.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+
+ActionView::TemplateError (undefined method `semantic_form_for' for #<ActionView::Base:0xad1cdb0>) on line #3 of app/views/parts/edit.html.erb:
+1: <h1>Editing part</h1>
+2: 
+3: <% semantic_form_for @part do |form| %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (210.6ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:34:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (19.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (6.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 140ms (View: 95, DB: 27) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:37:25) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (30.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.6ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 192ms (View: 115, DB: 32) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 13:43:32) [GET]
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 260ms (View: 232, DB: 3) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:43:36) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mPart Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 2) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+Completed in 187ms (View: 156, DB: 3) | 200 OK [http://localhost/parts/2/edit]

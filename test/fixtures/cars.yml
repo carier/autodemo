@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  brand: MyString
+  model: MyString
+  year: 1
+
+two:
+  brand: MyString
+  model: MyString
+  year: 1

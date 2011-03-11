@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  offstock: false
+  retail_cost: 9.99
+  final_cost: 9.99
+
+two:
+  title: MyString
+  offstock: false
+  retail_cost: 9.99
+  final_cost: 9.99
