@@ -10,6 +10,17 @@ class PartsController < ApplicationController
     end
   end
 
+  # GET /shop
+  # GET /shop.xml
+  def shop
+    @parts = Part.all
+
+    respond_to do |format|
+      format.html # shop.html.erb
+      format.xml  { render :xml => @parts }
+    end
+  end
+
   # GET /parts/1
   # GET /parts/1.xml
   def show

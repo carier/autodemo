@@ -934,3 +934,1286 @@ Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 13:43:36) [GET]
 Rendering template within layouts/parts
 Rendering parts/edit
 Completed in 187ms (View: 156, DB: 3) | 200 OK [http://localhost/parts/2/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (34.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (32.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParts (20110310144618)
+  [4;36;1mSQL (507.1ms)[0m   [0;1mDROP TABLE `parts`[0m
+  [4;35;1mSQL (192.8ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110310144618'[0m
+Migrating to CreateCars (20110310144553)
+  [4;36;1mSQL (98.8ms)[0m   [0;1mDROP TABLE `cars`[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110310144553'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCars (20110310144553)
+  [4;36;1mSQL (223.2ms)[0m   [0;1mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (75.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110310144553')[0m
+Migrating to CreateParts (20110310144618)
+  [4;36;1mSQL (152.1ms)[0m   [0;1mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0, `final_cost` decimal(8,2) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (18.8ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `parts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `parts`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParts (20110310144618)
+  [4;36;1mSQL (40.0ms)[0m   [0;1mDROP TABLE `parts`[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110310144618'[0m
+Migrating to CreateCars (20110310144553)
+  [4;36;1mSQL (38.2ms)[0m   [0;1mDROP TABLE `cars`[0m
+  [4;35;1mSQL (40.9ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20110310144553'[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCars (20110310144553)
+  [4;36;1mSQL (87.7ms)[0m   [0;1mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110310144553')[0m
+Migrating to CreateParts (20110310144618)
+  [4;36;1mSQL (91.8ms)[0m   [0;1mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0, `final_cost` decimal(8,2) DEFAULT 0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (43.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (12.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mdescribe `cars`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW KEYS FROM `cars`[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mdescribe `parts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW KEYS FROM `parts`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 16:56:50) [GET]
+  [4;36;1mPart Load (0.8ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+Completed in 54ms (View: 31, DB: 2) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-11 16:56:53) [GET]
+  [4;35;1mPart Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+
+ActionView::TemplateError (undefined method `checkbox_input' for #<Formtastic::SemanticFormBuilder:0xa8ccb48>) on line #7 of app/views/parts/new.html.erb:
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :title %>
+7:     <%= form.input :offstock, :as => :checkbox %>
+8:     <%= form.input :retail_cost, :label => "Retail Cost" %>
+9:     <%= form.input :final_cost, :label => "Final Price" %>
+10:   <% end %>
+
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `inline_input_for'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `input'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `input'
+    app/views/parts/new.html.erb:7
+    formtastic (1.2.3) lib/formtastic.rb:1367:in `field_set_and_list_wrapping'
+    formtastic (1.2.3) lib/formtastic.rb:293:in `inputs'
+    app/views/parts/new.html.erb:5
+    formtastic (1.2.3) lib/formtastic.rb:1941:in `semantic_form_for'
+    formtastic (1.2.3) lib/formtastic.rb:1906:in `with_custom_field_error_proc'
+    formtastic (1.2.3) lib/formtastic.rb:1940:in `semantic_form_for'
+    app/views/parts/new.html.erb:3
+    app/controllers/parts_controller.rb:29:in `new'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.4ms)
+Rendered rescues/_request_and_response (2.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-11 16:58:07) [GET]
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+Completed in 75ms (View: 50, DB: 3) | 200 OK [http://localhost/parts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-11 16:58:32) [POST]
+  Parameters: {"commit"=>"Create Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"20.0", "retail_cost"=>"10.0", "title"=>"part 0001", "offstock"=>["", "true"]}}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (35.5ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001') LIMIT 1[0m
+  [4;36;1mPart Create (0.0ms)[0m   [0;1mMysql::Error: Column 'car_id' cannot be null: INSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `car_id`, `offstock`) VALUES(10.0, 20.0, '2011-03-11 14:58:32', 'part 0001', '2011-03-11 14:58:32', NULL, 0)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'car_id' cannot be null: INSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `car_id`, `offstock`) VALUES(10.0, 20.0, '2011-03-11 14:58:32', 'part 0001', '2011-03-11 14:58:32', NULL, 0)):
+  app/controllers/parts_controller.rb:46:in `create'
+  app/controllers/parts_controller.rb:45:in `create'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (344.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-11 16:59:02) [POST]
+  Parameters: {"commit"=>"Create Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"20.0", "retail_cost"=>"10.0", "title"=>"part 0001", "offstock"=>["", "true"]}}
+  [4;36;1mPart Columns (20.0ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mPart Load (6.9ms)[0m   [0;1mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001') LIMIT 1[0m
+  [4;35;1mPart Create (0.0ms)[0m   [0mMysql::Error: Column 'car_id' cannot be null: INSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `car_id`, `offstock`) VALUES(10.0, 20.0, '2011-03-11 14:59:02', 'part 0001', '2011-03-11 14:59:02', NULL, 0)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Column 'car_id' cannot be null: INSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `car_id`, `offstock`) VALUES(10.0, 20.0, '2011-03-11 14:59:02', 'part 0001', '2011-03-11 14:59:02', NULL, 0)):
+  app/controllers/parts_controller.rb:46:in `create'
+  app/controllers/parts_controller.rb:45:in `create'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (264.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-11 16:59:07) [GET]
+  [4;35;1mPart Columns (8.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+  [4;36;1mCar Load (0.7ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Completed in 231ms (View: 202, DB: 10) | 200 OK [http://localhost/parts/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#index (for 127.0.0.1 at 2011-03-11 16:59:21) [GET]
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendering template within layouts/cars
+Rendering cars/index
+Completed in 69ms (View: 58, DB: 1) | 200 OK [http://localhost/cars]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#new (for 127.0.0.1 at 2011-03-11 16:59:23) [GET]
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/cars
+Rendering cars/new
+Completed in 55ms (View: 32, DB: 3) | 200 OK [http://localhost/cars/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#create (for 127.0.0.1 at 2011-03-11 16:59:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "car"=>{"model"=>"Intrepid", "brand"=>"Dodge", "year"=>"2004"}}
+  [4;35;1mCar Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mSQL (9.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mCar Create (0.7ms)[0m   [0mINSERT INTO `cars` (`brand`, `model`, `created_at`, `updated_at`, `year`) VALUES('Dodge', 'Intrepid', '2011-03-11 14:59:46', '2011-03-11 14:59:46', 2004)[0m
+  [4;36;1mSQL (34.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/cars/1
+Completed in 77ms (DB: 47) | 302 Found [http://localhost/cars]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#show (for 127.0.0.1 at 2011-03-11 16:59:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCar Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (4.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Rendering template within layouts/cars
+Rendering cars/show
+Completed in 34ms (View: 15, DB: 7) | 200 OK [http://localhost/cars/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 16:59:56) [GET]
+  [4;35;1mPart Load (0.8ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+Completed in 38ms (View: 4, DB: 1) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#new (for 127.0.0.1 at 2011-03-11 16:59:59) [GET]
+  [4;36;1mPart Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/new
+  [4;35;1mCar Load (1.0ms)[0m   [0mSELECT * FROM `cars` [0m
+  [4;36;1mCar Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Completed in 252ms (View: 222, DB: 6) | 200 OK [http://localhost/parts/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#create (for 127.0.0.1 at 2011-03-11 17:00:13) [POST]
+  Parameters: {"commit"=>"Create Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "part"=>{"final_cost"=>"20.0", "retail_cost"=>"10.0", "title"=>"part 0001", "car_id"=>"1", "offstock"=>["", "true"]}}
+  [4;35;1mPart Columns (12.2ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPart Load (10.1ms)[0m   [0mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001') LIMIT 1[0m
+  [4;36;1mPart Create (0.7ms)[0m   [0;1mINSERT INTO `parts` (`retail_cost`, `final_cost`, `created_at`, `title`, `updated_at`, `car_id`, `offstock`) VALUES(10.0, 20.0, '2011-03-11 15:00:13', 'part 0001', '2011-03-11 15:00:13', 1, 0)[0m
+  [4;35;1mSQL (43.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/parts/1
+Completed in 106ms (DB: 67) | 302 Found [http://localhost/parts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-11 17:00:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (1.1ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 35ms (View: 15, DB: 4) | 200 OK [http://localhost/parts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:00:22) [GET]
+  [4;36;1mPart Load (0.7ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 34ms (View: 15, DB: 4) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-11 17:05:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (6.5ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.5ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (67.7ms)
+Completed in 113ms (View: 85, DB: 14) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:07:23) [GET]
+  [4;35;1mPart Load (1.0ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.7ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 69ms (View: 33, DB: 7) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:08:07) [GET]
+  [4;35;1mPart Load (0.5ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (5.7ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 173ms (View: 142, DB: 9) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:09:07) [GET]
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.4ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `brans' for #<ActiveRecord::Associations::BelongsToAssociation:0xab8c400>) on line #16 of app/views/parts/index.html.erb:
+13: 
+14: <% @parts.each do |part| %>
+15:   <tr>
+16:     <td><%=h part.car.brans %></td>
+17:     <td><%=h part.car.model %></td>
+18:     <td><%=h part.car.year %></td>
+19:     <td><%=h part.title %></td>
+
+    app/views/parts/index.html.erb:16
+    app/views/parts/index.html.erb:14:in `each'
+    app/views/parts/index.html.erb:14
+    app/controllers/parts_controller.rb:7:in `index'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:09:18) [GET]
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (6.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (4.8ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 83ms (View: 54, DB: 12) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (1.8ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-11 17:13:59) [GET]
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (4.1ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Completed in 54ms (View: 38, DB: 7) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-11 17:14:07) [GET]
+  Parameters: {"id"=>"shop"}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (9.8ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Part with ID=shop):
+  app/controllers/parts_controller.rb:27:in `show'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-11 17:15:58) [GET]
+  Parameters: {"id"=>"shop"}
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (7.6ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Part with ID=shop):
+  app/controllers/parts_controller.rb:27:in `show'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (322.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-11 17:16:30) [GET]
+  Parameters: {"id"=>"shop"}
+  [4;36;1mPart Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Part with ID=shop):
+  app/controllers/parts_controller.rb:27:in `show'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (97.7ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-11 17:19:27) [GET]
+  Parameters: {"id"=>"shop"}
+  [4;36;1mPart Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.5ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Part with ID=shop):
+  app/controllers/parts_controller.rb:27:in `show'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.4ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#shop (for 127.0.0.1 at 2011-03-11 17:19:33) [GET]
+
+NameError (uninitialized constant PartController):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.8ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#shop (for 127.0.0.1 at 2011-03-11 17:19:52) [GET]
+
+NameError (uninitialized constant PartController):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.9ms)
+Rendered rescues/_request_and_response (2.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#shop (for 127.0.0.1 at 2011-03-11 17:20:20) [GET]
+
+NameError (uninitialized constant PartController):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (163.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-11 17:20:23) [GET]
+
+ActionController::RoutingError (No route matches "/shop." with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#shop (for 127.0.0.1 at 2011-03-11 17:20:28) [GET]
+
+NameError (uninitialized constant PartController):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#shop (for 127.0.0.1 at 2011-03-11 17:20:41) [GET]
+
+NameError (uninitialized constant PartController):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (127.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-11 17:21:13) [GET]
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.2ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 81ms (View: 56, DB: 6) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-11 17:22:02) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (7.8ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (6.7ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.2ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 71ms (View: 27, DB: 16) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-11 17:22:07) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (5.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 54ms (View: 25, DB: 9) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-11 17:22:29) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 76ms (View: 51, DB: 6) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-12 13:32:15) [GET]
+  [4;36;1mPart Load (26.7ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (53.8ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 329ms (View: 192, DB: 81) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 13:32:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (1.2ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (12.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.7ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (164.3ms)
+Completed in 226ms (View: 183, DB: 20) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 13:32:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (5.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.6ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.4ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (60.2ms)
+Completed in 84ms (View: 62, DB: 10) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 13:35:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (4.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mSQL (35.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCar Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+
+ActionView::TemplateError (undefined method `model' for #<Class:0x9ff4e08>) on line #4 of app/views/parts/_form.html.erb:
+1: <% semantic_form_for @part do |form| %>
+2: 
+3:   <% form.inputs :name => "Basic" do %>
+4:     <%= form.input :car, :include_blank => false, :collection => Car.model %>
+5:     <%= form.input :title %>
+6:     <%= form.input :offstock, :as => :check_boxes %>
+7:     <%= form.input :retail_cost, :label => "Retail Cost" %>
+
+    app/views/parts/_form.html.erb:4
+    formtastic (1.2.3) lib/formtastic.rb:1367:in `field_set_and_list_wrapping'
+    formtastic (1.2.3) lib/formtastic.rb:293:in `inputs'
+    app/views/parts/_form.html.erb:3
+    formtastic (1.2.3) lib/formtastic.rb:1941:in `semantic_form_for'
+    formtastic (1.2.3) lib/formtastic.rb:1906:in `with_custom_field_error_proc'
+    formtastic (1.2.3) lib/formtastic.rb:1940:in `semantic_form_for'
+    app/views/parts/_form.html.erb:1
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (245.5ms)
+Rendered rescues/_request_and_response (45.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 13:38:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (5.1ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.6ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (64.6ms)
+Completed in 103ms (View: 75, DB: 9) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 13:42:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (2.2ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.4ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (64.9ms)
+Completed in 92ms (View: 72, DB: 8) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:45:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.3ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.5ms)[0m   [0;1mSELECT * FROM `cars` [0m
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #6 of app/views/parts/_form.html.erb:
+3:   <%= form.error_messages %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :car, :include_blank => false %>
+7:     <%= form.input :title %>
+8:     <%= form.input :offstock, :as => :check_boxes %>
+9:     <%= form.input :retail_cost, :label => "Retail Cost" %>
+
+    app/models/car.rb:8:in `+'
+    app/models/car.rb:8:in `display_name'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send_or_call'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:842:in `select_input'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `inline_input_for'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `input'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `input'
+    app/views/parts/_form.html.erb:6
+    formtastic (1.2.3) lib/formtastic.rb:1367:in `field_set_and_list_wrapping'
+    formtastic (1.2.3) lib/formtastic.rb:293:in `inputs'
+    app/views/parts/_form.html.erb:5
+    formtastic (1.2.3) lib/formtastic.rb:1941:in `semantic_form_for'
+    formtastic (1.2.3) lib/formtastic.rb:1906:in `with_custom_field_error_proc'
+    formtastic (1.2.3) lib/formtastic.rb:1940:in `semantic_form_for'
+    app/views/parts/_form.html.erb:1
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (261.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:45:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (3.8ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` [0m
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #4 of app/views/parts/_form.html.erb:
+1: <% semantic_form_for @part do |form| %>
+2: 
+3:   <% form.inputs :name => "Basic" do %>
+4:     <%= form.input :car, :include_blank => false %>
+5:     <%= form.input :title %>
+6:     <%= form.input :offstock, :as => :check_boxes %>
+7:     <%= form.input :retail_cost, :label => "Retail Cost" %>
+
+    app/models/car.rb:8:in `+'
+    app/models/car.rb:8:in `display_name'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send_or_call'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:842:in `select_input'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `inline_input_for'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `input'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `input'
+    app/views/parts/_form.html.erb:4
+    formtastic (1.2.3) lib/formtastic.rb:1367:in `field_set_and_list_wrapping'
+    formtastic (1.2.3) lib/formtastic.rb:293:in `inputs'
+    app/views/parts/_form.html.erb:3
+    formtastic (1.2.3) lib/formtastic.rb:1941:in `semantic_form_for'
+    formtastic (1.2.3) lib/formtastic.rb:1906:in `with_custom_field_error_proc'
+    formtastic (1.2.3) lib/formtastic.rb:1940:in `semantic_form_for'
+    app/views/parts/_form.html.erb:1
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (262.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:47:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (13.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (11.4ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` [0m
+
+ActionView::TemplateError (can't convert Fixnum into String) on line #6 of app/views/parts/_form.html.erb:
+3:   <%= form.error_messages %>
+4: 
+5:   <% form.inputs :name => "Basic" do %>
+6:     <%= form.input :car, :include_blank => false %>
+7:     <%= form.input :title %>
+8:     <%= form.input :offstock, :as => :check_boxes %>
+9:     <%= form.input :retail_cost, :label => "Retail Cost" %>
+
+    app/models/car.rb:8:in `+'
+    app/models/car.rb:8:in `display_name'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1837:in `send_or_call'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:1499:in `find_collection_for_column'
+    formtastic (1.2.3) lib/formtastic.rb:842:in `select_input'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:1280:in `inline_input_for'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `send'
+    formtastic (1.2.3) lib/formtastic.rb:132:in `input'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `map'
+    formtastic (1.2.3) lib/formtastic.rb:131:in `input'
+    app/views/parts/_form.html.erb:6
+    formtastic (1.2.3) lib/formtastic.rb:1367:in `field_set_and_list_wrapping'
+    formtastic (1.2.3) lib/formtastic.rb:293:in `inputs'
+    app/views/parts/_form.html.erb:5
+    formtastic (1.2.3) lib/formtastic.rb:1941:in `semantic_form_for'
+    formtastic (1.2.3) lib/formtastic.rb:1906:in `with_custom_field_error_proc'
+    formtastic (1.2.3) lib/formtastic.rb:1940:in `semantic_form_for'
+    app/views/parts/_form.html.erb:1
+    app/views/parts/edit.html.erb:3
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (285.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:47:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (89.6ms)
+Completed in 128ms (View: 92, DB: 6) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:52:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (5.5ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (3.4ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (68.6ms)
+Completed in 93ms (View: 68, DB: 15) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 14:52:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (14.8ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.4ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (66.1ms)
+Completed in 118ms (View: 67, DB: 19) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 15:00:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (0.5ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (8.9ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.4ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (67.6ms)
+Completed in 96ms (View: 71, DB: 14) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#update (for 127.0.0.1 at 2011-03-12 15:00:29) [PUT]
+  Parameters: {"commit"=>"Update Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"1", "part"=>{"final_cost"=>"20.00", "retail_cost"=>"10.00", "title"=>"part 0001", "car_id"=>"1", "offstock"=>"1"}}
+  [4;35;1mPart Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPart Load (59.7ms)[0m   [0;1mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001' AND `parts`.id <> 1) LIMIT 1[0m
+  [4;35;1mPart Update (0.9ms)[0m   [0mUPDATE `parts` SET `updated_at` = '2011-03-12 13:00:29', `offstock` = 1 WHERE `id` = 1[0m
+  [4;36;1mSQL (40.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/parts/1
+Completed in 160ms (DB: 114) | 302 Found [http://localhost/parts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-12 15:00:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.8ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 41ms (View: 26, DB: 4) | 200 OK [http://localhost/parts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 15:00:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (12.1ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (53.9ms)
+Completed in 93ms (View: 56, DB: 18) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-12 15:00:38) [GET]
+  [4;36;1mPart Load (0.8ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 33ms (View: 14, DB: 5) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#index (for 127.0.0.1 at 2011-03-12 15:00:43) [GET]
+  [4;36;1mCar Load (0.4ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendering template within layouts/cars
+Rendering cars/index
+  [4;35;1mCar Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Completed in 204ms (View: 181, DB: 3) | 200 OK [http://localhost/cars]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#edit (for 127.0.0.1 at 2011-03-12 15:00:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (1.4ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Rendering template within layouts/cars
+Rendering cars/edit
+Completed in 92ms (View: 57, DB: 4) | 200 OK [http://localhost/cars/1/edit]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#index (for 127.0.0.1 at 2011-03-12 15:00:50) [GET]
+  [4;36;1mCar Load (8.2ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendering template within layouts/cars
+Rendering cars/index
+  [4;35;1mCar Columns (7.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Completed in 38ms (View: 12, DB: 16) | 200 OK [http://localhost/cars]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 15:01:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (5.9ms)[0m   [0mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (58.2ms)
+Completed in 89ms (View: 60, DB: 12) | 200 OK [http://localhost/parts/1/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#update (for 127.0.0.1 at 2011-03-12 15:01:51) [PUT]
+  Parameters: {"commit"=>"Update Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"1", "part"=>{"final_cost"=>"0.00", "retail_cost"=>"10.00", "title"=>"part 0001", "car_id"=>"1", "offstock"=>"1"}}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (3.8ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mPart Load (1.0ms)[0m   [0;1mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001' AND `parts`.id <> 1) LIMIT 1[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendered parts/_form (60.9ms)
+Completed in 108ms (View: 63, DB: 11) | 200 OK [http://localhost/parts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#update (for 127.0.0.1 at 2011-03-12 15:02:02) [PUT]
+  Parameters: {"commit"=>"Update Part", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"1", "part"=>{"final_cost"=>"10.00", "retail_cost"=>"10.00", "title"=>"part 0001", "car_id"=>"1", "offstock"=>"1"}}
+  [4;35;1mPart Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (7.7ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mPart Load (14.1ms)[0m   [0;1mSELECT `parts`.id FROM `parts` WHERE (`parts`.`title` = BINARY 'part 0001' AND `parts`.id <> 1) LIMIT 1[0m
+  [4;35;1mPart Update (1.0ms)[0m   [0mUPDATE `parts` SET `updated_at` = '2011-03-12 13:02:02', `final_cost` = 10.0 WHERE `id` = 1[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/parts/1
+Completed in 124ms (DB: 77) | 302 Found [http://localhost/parts/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#show (for 127.0.0.1 at 2011-03-12 15:02:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.8ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/show
+Completed in 191ms (View: 14, DB: 6) | 200 OK [http://localhost/parts/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-12 15:02:16) [GET]
+  [4;35;1mPart Load (0.9ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Completed in 35ms (View: 14, DB: 4) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-12 15:08:44) [GET]
+  [4;35;1mPart Load (2.1ms)[0m   [0mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Completed in 41ms (View: 24, DB: 5) | 200 OK [http://localhost/parts]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#edit (for 127.0.0.1 at 2011-03-12 15:08:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mPart Load (0.7ms)[0m   [0;1mSELECT * FROM `parts` WHERE (`parts`.`id` = 1) [0m
+Rendering template within layouts/parts
+Rendering parts/edit
+  [4;35;1mCar Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` [0m
+Rendered parts/_form (103.1ms)
+Completed in 140ms (View: 113, DB: 7) | 200 OK [http://localhost/parts/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#index (for 127.0.0.1 at 2011-03-12 15:10:05) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/index
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Completed in 65ms (View: 29, DB: 3) | 200 OK [http://localhost/parts]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:10:14) [GET]
+  [4;36;1mPart Load (9.7ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (11.6ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 115ms (View: 72, DB: 25) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:13:08) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (7.1ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 179ms (View: 150, DB: 11) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:13:28) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (5.6ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 80ms (View: 44, DB: 9) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:19:41) [GET]
+  [4;36;1mPart Load (6.1ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (4.5ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 53ms (View: 26, DB: 16) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:20:04) [GET]
+  [4;36;1mPart Load (1.1ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 72ms (View: 40, DB: 7) | 200 OK [http://localhost/shop]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-12 15:20:38) [GET]
+  [4;36;1mPart Load (0.3ms)[0m   [0;1mSELECT * FROM `parts` [0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Columns (10.7ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (7.5ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 67ms (View: 26, DB: 22) | 200 OK [http://localhost/shop]

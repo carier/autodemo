@@ -1,0 +1,17 @@
+<% semantic_form_for @part do |form| %>
+
+  <%= form.error_messages %>
+
+  <% form.inputs :name => "Basic" do %>
+    <%= form.input :car, :include_blank => false %>
+    <%= form.input :title %>
+    <%= form.input :offstock %>
+    <%= form.input :retail_cost, :label => "Retail Cost" %>
+    <%= form.input :final_cost, :label => "Final Price" %>
+  <% end %>
+
+  <% form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+
+<% end %>

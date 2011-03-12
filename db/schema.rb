@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110310144618) do
   end
 
   create_table "parts", :force => true do |t|
+    t.integer  "car_id",                                                     :null => false
     t.string   "title"
     t.boolean  "offstock"
     t.decimal  "retail_cost", :precision => 8, :scale => 2, :default => 0.0

@@ -1,7 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :parts
+  map.connect 'shop', :controller => 'parts', :action => 'shop'
 
   map.resources :cars
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 

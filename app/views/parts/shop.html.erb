@@ -1,0 +1,27 @@
+<h1>Car's parts</h1>
+
+<table>
+  <tr>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Year</th>
+    <th>Part</th>
+    <th>Offstock</th>
+    <th>Retail cost</th>
+    <th>Final cost</th>
+    <th>Bonus</th>
+  </tr>
+
+<% @parts.each do |part| %>
+  <tr>
+    <td><%=h part.car.brand %></td>
+    <td><%=h part.car.model %></td>
+    <td><%=h part.car.year %></td>
+    <td><%=h part.title %></td>
+    <td><%=h part.display_offstock %></td>
+    <td><%=h part.retail_cost %></td>
+    <td><%=h part.final_cost %></td>
+    <td><%=h part.bonus %></td>
+  </tr>
+<% end %>
+</table>
