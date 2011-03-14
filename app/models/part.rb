@@ -11,6 +11,11 @@ class Part < ActiveRecord::Base
   named_scope :ascend_by_bonus, :order => "(retail_cost - final_cost) asc"
   named_scope :descend_by_bonus, :order => "(retail_cost - final_cost) desc"
 
+  named_scope :bonus_gte, lambda { |gte| {
+              :conditions => ["(retail_cost - final_cost) >= ?", gte]}}
+  named_scope :bonus_lte, lambda { |lte| {
+              :conditions => ["(retail_cost - final_cost) <= ?", lte]}}
+
   def display_offstock
     if offstock
       "Yes"

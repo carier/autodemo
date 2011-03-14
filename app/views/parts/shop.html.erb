@@ -1,5 +1,35 @@
 <h1>Car's parts</h1>
 
+<% form_for @parts do |f| %>
+  <p>
+    <%= f.label :car_model_like, "Model" %><br />
+    <%= f.text_field :car_model_like %>
+  </p>
+  <p>
+    <%= f.label :car_year_gte, "Year Range" %><br />
+    <%= f.text_field :car_year_gte, :size => 8 %> - <%= f.text_field :car_year_lte, :size => 8 %>
+  </p>
+  <p>
+    <%= f.label :title_like, "Part" %><br />
+    <%= f.text_field :title_like %>
+  </p>
+  <p>
+    <!--= f.label :category_id_equals, "Category" %><br />
+    <= f.collection_select :category_id_equals, Category.all, :id, :name, :include_blank => true % -->
+  </p>
+  <p>
+    <%= f.label :final_cost_gte, "Price Range" %><br />
+    <%= f.text_field :final_cost_gte, :size => 8 %> - <%= f.text_field :final_cost_lte, :size => 8 %>
+  </p>
+  <p>
+    <%= f.label :bonus_gte, "Bonus Range" %><br />
+    <%= f.text_field :bonus_gte, :size => 8 %> - <%= f.text_field :bonus_lte, :size => 8 %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+<% end %>
+
 <table>
   <tr>
     <th><%= order @parts, :by => :car_brand %></th>

@@ -3539,3 +3539,225 @@ Rendering parts/shop
   [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
 Completed in 87ms (View: 50, DB: 19) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:48:27) [GET]
+  Parameters: {"search"=>{"order"=>"descend_by_title"}}
+  [4;36;1mPart Columns (14.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mCar Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+  [4;36;1mPart Load (0.4ms)[0m   [0;1mSELECT * FROM `parts` ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 127ms (View: 90, DB: 18) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:48:41) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"300M", "car_year_like"=>"", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;36;1mPart Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (11.6ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (12.7ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE (cars.model LIKE '%300M%') ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 128ms (View: 64, DB: 28) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=300M&search%5Bcar_year_like%5D=&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:48:46) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_like"=>"", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;35;1mPart Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT * FROM `parts` ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.5ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 122ms (View: 86, DB: 9) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:48:55) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_like"=>"2001", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;35;1mPart Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (1.3ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE (cars.year LIKE '%2001%') ORDER BY parts.title DESC[0m
+Completed in 105ms (View: 55, DB: 7) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=2001&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:49:00) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_like"=>"2002", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (1.3ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE (cars.year LIKE '%2002%') ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 245ms (View: 72, DB: 19) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=2002&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:49:08) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_like"=>"200", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;36;1mPart Columns (25.6ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (17.6ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (1.5ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE (cars.year LIKE '%200%') ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.5ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 151ms (View: 72, DB: 46) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=200&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:49:16) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"oil", "car_model_like"=>"", "car_year_like"=>"200", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;36;1mPart Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (16.6ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (19.4ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((parts.title LIKE '%oil%') AND (cars.year LIKE '%200%')) ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.5ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 152ms (View: 67, DB: 40) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=200&search%5Btitle_like%5D=oil&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:50:40) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"oil", "car_model_like"=>"", "car_year_like"=>"200", "order"=>"descend_by_title", "final_cost_gte"=>""}}
+  [4;35;1mPart Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (4.8ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (0.7ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((parts.title LIKE '%oil%') AND (cars.year LIKE '%200%')) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (3.4ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 250ms (View: 192, DB: 17) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_like%5D=200&search%5Btitle_like%5D=oil&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:50:50) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"oil", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "car_year_lte"=>"2005"}}
+  [4;36;1mPart Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (5.4ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (3.9ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE (((cars.year <= 2005) AND (cars.year >= 2000)) AND (parts.title LIKE '%oil%')) ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 138ms (View: 83, DB: 13) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2005&search%5Btitle_like%5D=oil&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:50:55) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "car_year_lte"=>"2005"}}
+  [4;35;1mPart Columns (12.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (14.8ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((cars.year <= 2005) AND (cars.year >= 2000)) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.2ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.5ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 155ms (View: 77, DB: 38) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2005&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:51:02) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "car_year_lte"=>"2003"}}
+  [4;35;1mPart Columns (7.0ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (8.8ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((cars.year <= 2003) AND (cars.year >= 2000)) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.5ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 242ms (View: 69, DB: 19) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2003&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 16:39:06) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "car_year_lte"=>"2003"}}
+  [4;35;1mPart Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((cars.year <= 2003) AND (cars.year >= 2000)) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 149ms (View: 106, DB: 6) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2003&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 16:39:11) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "bonus_gte"=>"", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "bonus_lte"=>"", "car_year_lte"=>"2003"}}
+  [4;35;1mPart Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (0.4ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((cars.year <= 2003) AND (cars.year >= 2000)) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (3.9ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Completed in 266ms (View: 199, DB: 10) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2003&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&search%5Bbonus_gte%5D=&search%5Bbonus_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 16:39:17) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "bonus_gte"=>"", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "bonus_lte"=>"", "car_year_lte"=>"2004"}}
+  [4;35;1mPart Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (3.7ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (8.8ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((cars.year <= 2004) AND (cars.year >= 2000)) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.7ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 150ms (View: 80, DB: 16) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2004&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&search%5Bbonus_gte%5D=&search%5Bbonus_lte%5D=&commit=Submit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 16:39:31) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "bonus_gte"=>"9", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "bonus_lte"=>"10", "car_year_lte"=>"2004"}}
+  [4;35;1mPart Columns (11.2ms)[0m   [0mSHOW FIELDS FROM `parts`[0m
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (1.4ms)[0m   [0mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((((cars.year <= 2004) AND (cars.year >= 2000)) AND ((retail_cost - final_cost) <= '10')) AND ((retail_cost - final_cost) >= '9')) ORDER BY parts.title DESC[0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 157ms (View: 98, DB: 16) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2004&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&search%5Bbonus_gte%5D=9&search%5Bbonus_lte%5D=10&commit=Submit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 16:39:44) [GET]
+  Parameters: {"commit"=>"Submit", "search"=>{"final_cost_lte"=>"", "title_like"=>"", "bonus_gte"=>"11", "car_model_like"=>"", "car_year_gte"=>"2000", "order"=>"descend_by_title", "final_cost_gte"=>"", "bonus_lte"=>"12", "car_year_lte"=>"2004"}}
+  [4;36;1mPart Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mCar Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Load (1.5ms)[0m   [0;1mSELECT `parts`.* FROM `parts` INNER JOIN `cars` ON `cars`.id = `parts`.car_id WHERE ((((cars.year <= 2004) AND (cars.year >= 2000)) AND ((retail_cost - final_cost) <= '12')) AND ((retail_cost - final_cost) >= '11')) ORDER BY parts.title DESC[0m
+  [4;35;1mCar Load (0.5ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 264ms (View: 202, DB: 9) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title&search%5Bcar_model_like%5D=&search%5Bcar_year_gte%5D=2000&search%5Bcar_year_lte%5D=2004&search%5Btitle_like%5D=&search%5Bfinal_cost_gte%5D=&search%5Bfinal_cost_lte%5D=&search%5Bbonus_gte%5D=11&search%5Bbonus_lte%5D=12&commit=Submit]
