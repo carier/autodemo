@@ -3412,3 +3412,130 @@ Rendering parts/shop
   [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
 Completed in 180ms (View: 39, DB: 120) | 200 OK [http://localhost/shop?search%5Border%5D=descend_by_bonus]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#index (for 127.0.0.1 at 2011-03-14 15:22:24) [GET]
+  [4;36;1mCar Load (15.7ms)[0m   [0;1mSELECT * FROM `cars` [0m
+Rendering template within layouts/cars
+Rendering cars/index
+  [4;35;1mCar Columns (29.5ms)[0m   [0mSHOW FIELDS FROM `cars`[0m
+Completed in 163ms (View: 94, DB: 46) | 200 OK [http://localhost/cars]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#edit (for 127.0.0.1 at 2011-03-14 15:22:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCar Columns (14.9ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Rendering template within layouts/cars
+Rendering cars/edit
+Rendered cars/_form (58.0ms)
+Completed in 123ms (View: 82, DB: 16) | 200 OK [http://localhost/cars/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#update (for 127.0.0.1 at 2011-03-14 15:22:36) [PUT]
+  Parameters: {"commit"=>"Update Car", "authenticity_token"=>"z2dUnZx+3BqZsaOMNeArDj6WRccXO+kJLez+qsIjMQQ=", "id"=>"1", "car"=>{"model"=>"Intrepid", "brand"=>"Dodge", "year"=>"2002"}}
+  [4;36;1mCar Columns (11.1ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.6ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/cars/1
+Completed in 45ms (DB: 13) | 302 Found [http://localhost/cars/1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CarsController#show (for 127.0.0.1 at 2011-03-14 15:22:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCar Columns (5.4ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.4ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+Rendering template within layouts/cars
+Rendering cars/show
+Completed in 42ms (View: 23, DB: 6) | 200 OK [http://localhost/cars/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-14 15:29:09) [GET]
+
+ActionController::RoutingError (No route matches "/shop" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (3.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-03-14 15:31:39) [GET]
+
+ActionController::RoutingError (No route matches "/shop" with {:method=>:get}):
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/carier/.rvm/rubies/ree-1.8.7-2010.02/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:38:21) [GET]
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;36;1mPart Columns (17.2ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+  [4;35;1mPart Load (4.3ms)[0m   [0mSELECT * FROM `parts` [0m
+  [4;36;1mCar Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 260ms (View: 205, DB: 25) | 200 OK [http://localhost/parts/shop]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:38:34) [GET]
+  Parameters: {"search"=>{"order"=>"ascend_by_title"}}
+  [4;36;1mPart Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (12.3ms)[0m   [0mSELECT * FROM `parts` ORDER BY parts.title ASC[0m
+  [4;36;1mCar Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.3ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 78ms (View: 46, DB: 18) | 200 OK [http://localhost/parts/shop?search%5Border%5D=ascend_by_title]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PartsController#shop (for 127.0.0.1 at 2011-03-14 15:38:35) [GET]
+  Parameters: {"search"=>{"order"=>"descend_by_title"}}
+  [4;36;1mPart Columns (13.9ms)[0m   [0;1mSHOW FIELDS FROM `parts`[0m
+Rendering template within layouts/parts
+Rendering parts/shop
+  [4;35;1mPart Load (1.3ms)[0m   [0mSELECT * FROM `parts` ORDER BY parts.title DESC[0m
+  [4;36;1mCar Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `cars`[0m
+  [4;35;1mCar Load (0.4ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 1) [0m
+  [4;36;1mCar Load (0.3ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 2) [0m
+Completed in 87ms (View: 50, DB: 19) | 200 OK [http://localhost/parts/shop?search%5Border%5D=descend_by_title]

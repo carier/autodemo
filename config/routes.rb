@@ -1,6 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :parts
-  map.connect 'shop', :controller => 'parts', :action => 'shop'
+  map.resources :parts, :collection => { :shop => :get }
 
   map.resources :cars
 

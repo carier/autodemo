@@ -1,0 +1,15 @@
+<% semantic_form_for @car do |form| %>
+
+  <%= form.error_messages %>
+
+  <% form.inputs :name => "Basic Params" do %>
+    <%= form.input :brand %>
+    <%= form.input :model %>
+    <%= form.input :year %>
+  <% end %>
+
+  <% form.buttons do %>
+    <%= form.commit_button %>
+  <% end %>
+
+<% end %>

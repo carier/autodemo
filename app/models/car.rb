@@ -1,5 +1,5 @@
 class Car < ActiveRecord::Base
-  has_many :parts
+  has_many :parts, :dependent => :delete_all
 
   validates_presence_of :brand, :model, :year
   validates_numericality_of :year

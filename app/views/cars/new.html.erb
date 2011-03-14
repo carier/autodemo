@@ -1,23 +1,5 @@
 <h1>New car</h1>
 
-<% form_for(@car) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :brand %><br />
-    <%= f.text_field :brand %>
-  </p>
-  <p>
-    <%= f.label :model %><br />
-    <%= f.text_field :model %>
-  </p>
-  <p>
-    <%= f.label :year %><br />
-    <%= f.text_field :year %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
+<%= render(:partial => "form" , :car => @car) %>
 
 <%= link_to 'Back', cars_path %>
