@@ -1,13 +1,20 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
 one:
-  title: MyString
+  #car: :chrysler
+  title: Oil Filter
   offstock: false
-  retail_cost: 9.99
-  final_cost: 9.99
+  retail_cost: 39.95
+  final_cost: 29.95
 
 two:
-  title: MyString
-  offstock: false
+  #car: :chrysler
+  title: Fue Filter
+  offstock: true
   retail_cost: 9.99
   final_cost: 9.99
+
+three:
+  #car: :dodge
+  title: Oil Filter
+  offstock: false
+  retail_cost: 35.95
+  final_cost: 21.95

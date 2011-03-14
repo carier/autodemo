@@ -13,7 +13,7 @@ class PartsController < ApplicationController
   # GET /shop
   # GET /shop.xml
   def shop
-    @parts = Part.all
+    @parts = Part.search(params[:search])
 
     respond_to do |format|
       format.html # shop.html.erb

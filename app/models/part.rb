@@ -7,7 +7,9 @@ class Part < ActiveRecord::Base
                       :message => 'is at least 5 characters long.'
   validates_numericality_of :retail_cost, :final_cost
   validate :final_cost_must_be_lower_that_retail_cost
-  validates_uniqueness_of :title
+
+  named_scope :ascend_by_bonus, :order => "(retail_cost - final_cost) asc"
+  named_scope :descend_by_bonus, :order => "(retail_cost - final_cost) desc"
 
   def display_offstock
     if offstock
@@ -23,7 +25,7 @@ class Part < ActiveRecord::Base
   
 protected
   def final_cost_must_be_lower_that_retail_cost
-    errors.add(:final_cost, 'should be lower that retail cost' ) if retail_cost > final_cost
+    errors.add(:final_cost, 'should be lower that retail cost' ) if retail_cost < final_cost
   end
 
 end

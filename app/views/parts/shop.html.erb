@@ -2,14 +2,14 @@
 
 <table>
   <tr>
-    <th>Brand</th>
-    <th>Model</th>
-    <th>Year</th>
-    <th>Part</th>
-    <th>Offstock</th>
-    <th>Retail cost</th>
-    <th>Final cost</th>
-    <th>Bonus</th>
+    <th><%= order @parts, :by => :car_brand %></th>
+    <th><%= order @parts, :by => :car_model %></th>
+    <th><%= order @parts, :by => :car_year %></th>
+    <th><%= order @parts, :by => :title, :as => 'Part' %></th>
+    <th><%= order @parts, :by => :offstock %></th>
+    <th><%= order @parts, :by => :retail_cost %></th>
+    <th><%= order @parts, :by => :final_cost %></th>
+    <th><%= order @parts, :by => :bonus %></th>
   </tr>
 
 <% @parts.each do |part| %>

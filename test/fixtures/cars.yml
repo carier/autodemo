@@ -1,11 +1,9 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+dodge:
+  brand: Dodge
+  model: Intrepid
+  year: 2001
 
-one:
-  brand: MyString
-  model: MyString
-  year: 1
-
-two:
-  brand: MyString
-  model: MyString
-  year: 1
+chrysler:
+  brand: Chrysler
+  model: 300M
+  year: 2004
