@@ -6990,3 +6990,302 @@ Rendering parts/shop
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `cars` WHERE (`cars`.`id` = 3) [0m
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `cars` WHERE (`cars`.`id` = 3) [0m
 Completed in 323ms (View: 174, DB: 132) | 200 OK [http://localhost/parts/shop]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (9.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (261.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (451.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (920.0ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (8.7ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (6.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (693.7ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (15.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (242.7ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (35.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (195.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (99.5ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (781.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (21.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (40.8ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (81.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (63.5ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (67.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (8.6ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (386.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (143.9ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (76.7ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (87.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (249.9ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (29.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (37.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (37.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (18.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (121.2ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (142.5ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (10.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (116.0ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (108.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (22.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (369.3ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (11.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (29.5ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (61.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (41.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (133.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (13.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (115.4ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (104.8ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (79.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (258.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (49.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (32.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (39.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (136.7ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (16.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (116.4ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (22.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (89.2ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (85.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (265.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (56.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (41.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (7.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (137.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.2ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (100.8ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (105.3ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (215.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (42.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (37.4ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (33.8ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (145.8ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (133.3ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (6.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (102.4ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (97.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (242.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (49.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (43.3ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (45.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (163.5ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (90.9ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (90.1ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (80.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (187.5ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (44.2ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (43.1ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (31.4ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (114.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (14.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (150.5ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (222.2ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (47.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (47.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (156.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (104.5ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (74.4ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (182.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (41.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (33.6ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (109.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (110.7ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (87.4ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (213.8ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (48.1ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (49.0ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (12.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (126.3ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (106.6ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (96.6ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (80.1ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (204.1ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (41.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (37.2ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (34.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (139.4ms)[0m   [0;1mDROP DATABASE IF EXISTS `autodemo_test`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE DATABASE `autodemo_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (90.5ms)[0m   [0mCREATE TABLE `cars` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `brand` varchar(255), `model` varchar(255), `year` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (18.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (86.4ms)[0m   [0mCREATE TABLE `parts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `car_id` int(11) NOT NULL, `title` varchar(255), `offstock` tinyint(1), `retail_cost` decimal(8,2) DEFAULT 0.0, `final_cost` decimal(8,2) DEFAULT 0.0, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (82.5ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (198.4ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
+  [4;36;1mSQL (51.7ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110312134633')[0m
+  [4;35;1mSQL (44.8ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20110310144553')[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20110310144618')[0m

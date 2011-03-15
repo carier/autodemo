@@ -1,7 +1,8 @@
 class Part < ActiveRecord::Base
   belongs_to :car
+  accepts_nested_attributes_for :car
 
-  validates_presence_of :title, :retail_cost, :final_cost
+  validates_presence_of :car, :title, :retail_cost, :final_cost
   validates_length_of :title,
                       :minimum => 5,
                       :message => 'is at least 5 characters long.'
@@ -30,7 +31,7 @@ class Part < ActiveRecord::Base
   
 protected
   def final_cost_must_be_lower_that_retail_cost
-    errors.add(:final_cost, 'should be lower that retail cost' ) if retail_cost < final_cost
+    errors.add(:final_cost, 'should be lower that retail cost' ) if retail_cost.to_f < final_cost.to_f
   end
 
 end
