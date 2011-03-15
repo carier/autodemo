@@ -1,3 +1,5 @@
+<% 1.times { @car.parts.build } unless @car.parts.any? %>
+
 <% semantic_form_for @car do |form| %>
 
   <%= form.error_messages %>
@@ -6,6 +8,15 @@
     <%= form.input :brand %>
     <%= form.input :model %>
     <%= form.input :year %>
+  <% end %>
+
+  <% form.semantic_fields_for :parts do |part| %>
+    <% part.inputs :name => "Part Params" do %>
+      <%= part.input :title %>
+      <%= part.input :offstock %>
+      <%= part.input :retail_cost, :label => "Retail Cost" %>
+      <%= part.input :final_cost, :label => "Final Price" %>
+    <% end %>
   <% end %>
 
   <% form.buttons do %>
